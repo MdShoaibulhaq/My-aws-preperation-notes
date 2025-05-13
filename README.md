@@ -7,20 +7,20 @@ Basic Concepts of Cloud
                      There are certain services and models working behind the scene making the cloud computing feasible and accessible to end users.
  Following are the working models for cloud computing:
 ================================
- ** Deployment Model
+ **Deployment Model**
 ======================
  ▫ Public Cloud 
 ▫ Private Cloud
  ▫ Hybrid Cloud
  ▫ Community Cloud
 ==========================================================================
- ▪ Service Models 
+**Service Models**
 ▫ IAAS 
 ▫ PAAS
  ▫ SAAS 
 ▫ Anything-as-a-Service (XaaS) is yet another service model, which includes Network-as-a-Service, Business-as-a-Service, Identity-as-a Service, Database-as-a-Service or Strategy-as-a-Service
 ==========================================================================
-Deployment Models
+**Deployment Models**
 ========================================================================
  ▪ PUBLIC CLOUD 
 The public cloud allows systems and services to be easily accessible to the general public. Public cloud may be less secure because of its openness.
@@ -36,16 +36,16 @@ The hybrid cloud is a mixture of public and private cloud, in which the critic
 =======================================================================
 Service Models 
 =====================================================================
-▪ INFRASTRUCTURE-AS-A-SERVICE (IAAS)
+**INFRASTRUCTURE-AS-A-SERVICE (IAAS)**
  IaaS provides access to fundamental resources such as physical machines, virtual machines, virtual storage, etc. 
 ==========================================================================
-▪ PLATFORM-AS-A-SERVICE (PAAS)
+**PLATFORM-AS-A-SERVICE (PAAS)**
  Deploy application without managing virtual servers (Google App Engine, , AWS Elastic Beanstalk, Windows Azure, Heroku, Force.com)  and provide complete development environment, and user can easily create, test, run and deploy web applications
 =========================================================================
-▪ SOFTWARE-AS-A-SERVICE (SAAS) 
+**SOFTWARE-AS-A-SERVICE (SAAS)** 
 Ready to use software applications (Gmail, Office365, Google Apps, Dropbox, Salesforce, Cisco WebEx, Concur, GoToMeeting)
 ==========================================================================
-AWS Global Infrastructure ::=
+**AWS Global Infrastructure** ::=
 ==========================================================================
 Amazon Cloud Computing resources are available across the world. In easy words if we see this then Amazon Data Centres are available in different geographical locations.
 
@@ -96,8 +96,7 @@ The higher the number of edge locations the better the content is distributed al
 
 >An example would be CloudFront which is a CDN:
 Cached items such as a PDF file can be cached on the edge location which reduces the amount of "space/time/latency" required for a request from the other part of the world.
-		AWS SERVICES
-			=========================
+		
 ELASTIC COMPUTE CLOUD (EC2):-
 =============================
 
@@ -105,7 +104,7 @@ ELASTIC COMPUTE CLOUD (EC2):-
 
 =>Using Amazon EC2 eliminates your need to invest in hardware upfront, so you can develop and deploy applications faster.
 
-=>You can use Amazon EC2 to launch as many or as few virtual servers as you need, configure security and networking, and manage storage. Amazon EC2 enables you to scale up or down to handle changes in requirements or spikes in popularity, reducing your need to forecast traffic.
+>You can use Amazon EC2 to launch as many or as few virtual servers as you need, configure security and networking, and manage storage. Amazon EC2 enables you to scale up or down to handle changes in requirements or spikes in popularity, reducing your need to forecast traffic.
 I want you to picture EC2 like a computer, and the components that make it up like OS, CPU, HDD, NW, Firewall, RAM etc.
 ==========================================================================
 EC2 - Features
