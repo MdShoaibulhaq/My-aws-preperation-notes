@@ -1,12 +1,13 @@
 # My-aws-preperation-notes
 
-CLOUD COMPUTING :-Cloud computing means storing and accessing data and programs over the Internet instead of your computer's hard drive.
+**CLOUD COMPUTING**
+>Cloud computing means storing and accessing data and programs over the Internet instead of your computer's hard drive.
 ==========================================================================
 Basic Concepts of Cloud
                      There are certain services and models working behind the scene making the cloud computing feasible and accessible to end users.
  Following are the working models for cloud computing:
 ================================
- ▪ Deployment Model
+ ** Deployment Model
 ======================
  ▫ Public Cloud 
 ▫ Private Cloud
@@ -60,15 +61,15 @@ Regions
 =======
 Amazon Cloud Computing Resources or Data Centres are available in different Geographical Locations.
 
-One location is called One AWS Region.
-Each AWS Region is separate from other AWS Region.
-Availability of Services are different for different AWS Regions.
-Regions are designed to service AWS customers (or your users) that are located closest to a region.
-When viewing a region in the console you will only view resources in one region at a time.
-Availability of regions allow the architects to design applications to conform to specific laws and regulations 
-Some AWS services work "globally" while some work within a specific region only
-When we provision an EC2 instance or S3 Bucket, then you would select the region and that is where these are provisioned or stored in that region.
-One AWS region is a combination of multiple Availability Zones (AZs).
+>One location is called One AWS Region.
+>Each AWS Region is separate from other AWS Region.
+>Availability of Services are different for different AWS Regions.
+>Regions are designed to service AWS customers (or your users) that are located closest to a region.
+>When viewing a region in the console you will only view resources in one region at a time.
+>Availability of regions allow the architects to design applications to conform to specific laws and regulations 
+>Some AWS services work "globally" while some work within a specific region only
+>When we provision an EC2 instance or S3 Bucket, then you would select the region and that is where these are provisioned or stored in that region.
+>One AWS region is a combination of multiple Availability Zones (AZs).
 ==========================================================================
 Availability Zone
 =========================================================================
@@ -76,14 +77,14 @@ As per AWS infrastructure, each geographical area is known as AWS Region which i
 
 Each Region has multiple Physical Data Centres and these Physical Data Centres are known as AVAILABILITY ZONE or AZs.
 
-=>The Availability zone is where the actual data centres are located.
-=>So within a Region there can be multiple Availability zones which are physically separated but are connected through low latency and high speed internet connections.
-=>One Availability zone (AZ) is one Physical Data Centre.
-=>Each AZ has independent Power Supply, Networking, Cooling System, Physical Security.
-=>Each AZ connected via redundant, ultra-low-latency networks with other AZ in the same AWS Region.
-=>Properly designed applications will utilize multiple availability zones for High Availability and  Fault Tolerance.
-=>That means if any organization deploys their database in one region then the data is distributed in multiple AZs. In the issue of power outages, lightning strikes, tornadoes, earthquakes, and more at one AZ, Data is safe and accessible from other AZ.
-=>AZ’s are physically separated by a meaningful distance, many kilometers, from any other AZ, although all are within 100+ km (60+ miles) of each other.
+>The Availability zone is where the actual data centres are located.
+>So within a Region there can be multiple Availability zones which are physically separated but are connected through low latency and high speed internet connections.
+>One Availability zone (AZ) is one Physical Data Centre.
+>Each AZ has independent Power Supply, Networking, Cooling System, Physical Security.
+>Each AZ connected via redundant, ultra-low-latency networks with other AZ in the same AWS Region.
+>Properly designed applications will utilize multiple availability zones for High Availability and  Fault Tolerance.
+>That means if any organization deploys their database in one region then the data is distributed in multiple AZs. In the issue of power outages, lightning strikes, tornadoes, earthquakes, and more at one AZ, Data is safe and accessible from other AZ.
+>AZ’s are physically separated by a meaningful distance, many kilometers, from any other AZ, although all are within 100+ km (60+ miles) of each other.
 =========================================================================
 Region & AZ’s
 ======================================================================
@@ -93,7 +94,7 @@ An Edge location can be assumed to be a collection of physical servers within a 
 
 The higher the number of edge locations the better the content is distributed all over the world / region.
 
-An example would be CloudFront which is a CDN:
+>An example would be CloudFront which is a CDN:
 Cached items such as a PDF file can be cached on the edge location which reduces the amount of "space/time/latency" required for a request from the other part of the world.
 		AWS SERVICES
 			=========================
@@ -134,7 +135,7 @@ EC2 - Configuration
 =========================================================================
 EC2 instances are designed to mimic traditional on-premise servers, but with the ability to be commissioned and decommissioned on-demand for easy scalability and elasticity.
 
-EC2 instances are primarily comprised of the follow components:
+>EC2 instances are primarily comprised of the follow components:
 =>Amazon Machine Image (AMI): The operating system (and other softwares).
 =>Instance Type: The hardware (computer power, ram, network bandwidth, etc).
 =>Network interface: (public, private, or elastic IP addresses).
@@ -167,9 +168,9 @@ Network Performance (bandwidth)
 =>There is a collection of pre configured instance types that are grouped into families and types that you can choose from:
 
 ==========================================================================
-General Purpose Instances
+>General Purpose Instances
 ==========================================================================
-General purpose instances provide a balance of compute, memory, and networking resources, and can be used for a variety of workloads.
+>General purpose instances provide a balance of compute, memory, and networking resources, and can be used for a variety of workloads.
 Websites and web applications, Small and medium databases, Development, build, test, and staging environments
 Check this link https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/general-purpose-instances.html
 ==========================================================================
@@ -196,7 +197,7 @@ Log or data processing applications
 Check this link https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/storage-optimized-instances.html
 
 ========================================================================
-Accelerated Computing Instances -
+>Accelerated Computing Instances -
 ===================================================================
 =>If you require high processing capability, you'll benefit from using accelerated computing instances, which provide access to hardware-based compute accelerators such as Graphics Processing Units (GPUs)
 Check this link https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/accelerated-computing-instances.html
@@ -220,12 +221,12 @@ Capacity Reservations – Reserve capacity for your EC2 instances in a specific 
 =====================================================================
 Instance Lifecycle
 
-The lifecycle of an instance starts when it is launched and ends when it is terminated. The purchasing option that you choose affects the lifecycle of the instance. For example, an On-Demand Instance runs when you launch it and ends when you terminate it. A Spot Instance runs as long as capacity is available and your maximum price is higher than the Spot price.
+>The lifecycle of an instance starts when it is launched and ends when it is terminated. The purchasing option that you choose affects the lifecycle of the instance. For example, an On-Demand Instance runs when you launch it and ends when you terminate it. A Spot Instance runs as long as capacity is available and your maximum price is higher than the Spot price.
 ========================================================================
 
 Installing Gitbash
 
-Once Git Bash Windows installer is downloaded, run the executable file and follow the steps.
+>Once Git Bash Windows installer is downloaded, run the executable file and follow the steps.
 ========
 SSH
 ============
@@ -321,7 +322,7 @@ PuTTY uses .ppk files instead of .pem files. If you haven't already generated a 
 > You will now be logged in
 
 =====================================================================
-EC2 - IP Address
+>EC2 - IP Address
 ======================================================================
 Private IP Address
 =====================================================================
@@ -350,7 +351,7 @@ EC2 Storage
 Elastic Block Store - EBS (Persistent - Network attached drives)
 Instance Store ( Ephemeral/temporary store)
 
-EC2 instances can be launched by choosing between AMIs backed by EC2 instance stores and AMIs backed by EBS. However, AWS recommends use of EBS backed AMIs, because they launch faster and use persistent storage
+>EC2 instances can be launched by choosing between AMIs backed by EC2 instance stores and AMIs backed by EBS. However, AWS recommends use of EBS backed AMIs, because they launch faster and use persistent storage
 ====================================================================
 EBS - Elastic Block Store
 ========================================================================
@@ -381,7 +382,7 @@ Root vs Additional Volumes
 
 =>However, they can only be attached to ONE EC2 instance at a time.
 
-=>EBS volumes have the benefit of being backed up into a snapshot - which can later be restored into a new EBS volume.
+>EBS volumes have the benefit of being backed up into a snapshot - which can later be restored into a new EBS volume.
 =================================================================
 EBS - Performance
 ====================================================================
@@ -392,7 +393,7 @@ For example, A 512KB operation would count as 2 IOPS
 
 The type of EBS volume you specify greatly influences the I/O performance (IOPS) your device
 
-It is important as architects to understand if your application requires more (or less) I/O when selecting an EBS volume typ
+>It is important as architects to understand if your application requires more (or less) I/O when selecting an EBS volume typ
 =====================================================================
 EBS - Types
 ====================================================================
@@ -408,7 +409,7 @@ Check the following links for more information
 
 https://aws.amazon.com/ebs/volume-types/
 
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html
+>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html
 ==================================================================
 Instance Store
 ==============================================================
@@ -418,7 +419,7 @@ Instance store volumes are considered ephemeral data i.e temporary storage, mean
 
 The EC2 instance attached with the instance store can't be stopped, they can only be rebooted or terminated, and termination will erase the data.
 
-Instance Store
+>Instance Store
 Elastic Block Store
 Local to Instance
 Network Attached Storage
@@ -437,7 +438,7 @@ EBS - Snapshot
 =>Pause file writes till you snapshot is complete
 =>If you can't pause file writes, you need to unmount (detach) the volume from instance, take the snapshot, then re mount the volume to ensure a consistent and complete snapshot
 
-=>To create a snapshot for a root (boot) EBS Volume, you should stop the instance first then take the snapshot.
+>To create a snapshot for a root (boot) EBS Volume, you should stop the instance first then take the snapshot.
 =>Be careful if you have instance store volumes on EC2 Instance , their data will be lost once you stop the instance.
 ===================================================================
 Limitations Of EBS
@@ -468,7 +469,7 @@ AMI
 =>The AWS Marketplace AMIs are organized into categories, such as Developer Tools, to enable you to find products to suit your requirements.
 
 =======================================================================
-Instance User Data
+>Instance User Data
 =====================================================================
 Bootstrapping
 Refers to a self-starting process i.e run set of commands without external input.
@@ -512,7 +513,7 @@ The storage capacity will increase and decrease as you add or remove files.
 
 =>Supports the Network File system version 4.0 and 4.1 (NFSv4) protocols when mounting.
 
-=>Best performance when using an EC2 AMI with Linux kernel 4.0 or newer & EFS is not used as boot volume
+>Best performance when using an EC2 AMI with Linux kernel 4.0 or newer & EFS is not used as boot volume
 =====================================================================
 Benefits Of EFS
 ===================================================================
@@ -560,7 +561,7 @@ If there are multiple subnets in an AZ, you can create a mount target in one of 
 
 Mount targets are also highly available service
 
-AWS recommends that you create mount targets in all the AZ's, so that you can easily mount the file system on EC2 instances that you might launch in any zone in future, as there are no charges for mount targets
+>AWS recommends that you create mount targets in all the AZ's, so that you can easily mount the file system on EC2 instances that you might launch in any zone in future, as there are no charges for mount targets
 ============================================================
 EFS Use-Cases
 =============================================================
@@ -570,7 +571,7 @@ Amazon EFS allows data to be persisted separately from compute, and enables appl
 
 Amazon EFS provides the ease of use, scale, performance, and consistency needed for machine learning and big data analytics workloads.  Amazon SageMaker integrates with EFS for training jobs, allowing data scientists to iterate quickly.
 
-Amazon EFS provides a durable, high throughput file system for content management systems and web serving applications.
+>Amazon EFS provides a durable, high throughput file system for content management systems and web serving applications.
 =====================================================================
 EFS Storage Classes
 =====================================================================
@@ -580,7 +581,7 @@ Standard : used to store frequently accessed data i.e daily accessed.
 
 Infrequent Access : It's a lower cost storage class that's designed for infrequently accessed files(not accessed everyday),  IA provides cost-optimization for files not accessed every day.
 
-By simply enabling EFS Lifecycle Management on your file system, files not accessed according to the lifecycle policy you choose will be automatically and transparently moved into EFS IA.
+>By simply enabling EFS Lifecycle Management on your file system, files not accessed according to the lifecycle policy you choose will be automatically and transparently moved into EFS IA.
 ============================================================================================================================================
 			# AWS High Availability: Load Balancing and Auto Scaling
 ===========================================================================================================================================
@@ -675,4 +676,11 @@ Auto Scaling ensures you have the correct number of EC2 instances available to h
 - Improved fault tolerance
 - Better cost management
 - Increased application availability
+- 
+**Vertical Scaling (Scaling Up)**
+----------------------------------------
+> **Vertical scaling** refers to increasing the capacity of a single server or resource by adding more power—such as CPU, RAM, or storage. It improves performance by upgrading the existing machine rather than adding more machines.
 
+**Horizontal Scaling (Scaling Out)**
+---------------------------------------------
+> **Horizontal scaling** involves adding more servers or instances to a system to distribute the load. Instead of making one machine more powerful, it adds multiple machines to handle increased demand, improving availability and scalability.
